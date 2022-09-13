@@ -1,0 +1,163 @@
+/* root::{
+    --desktop:1440px;
+    --mobile:375px;
+    
+    --red: hsl(0, 100%, 74%) 
+    --green: hsl(154, 59%, 51%)
+    --Blue: hsl(248, 32%, 49%)
+    --DarkBlue: hsl(249, 10%, 26%) 
+    --GrayishBlue: hsl(246, 25%, 77%)
+}
+::root */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:  hsl(0, 100%, 74%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column;
+
+}
+
+
+.intro{
+    margin: 50px 0;
+    text-align: center;
+    font-family: monospace;
+    
+}
+.about{
+    word-spacing: 4px;
+    line-height: 1.5em;
+}
+header{
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+   
+    /* width: 300px; */
+    /* border: 1px solid red; */
+    /* align-items: center; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.days{
+    background: hsl(248, 32%, 49%);
+    /* width: 400px; */
+   width: 100%;
+   height: 60px;
+   border-radius: 10px;
+   /* text-align: center; */
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: .9em;
+    text-transform: capitalize;
+    margin: 20px;
+
+}
+
+form
+{
+    background-color: white;
+    height: 300px;
+
+    /* border: 1px red; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    flex: auto;
+    margin: 30px;
+    border-radius: 10px;
+    /* justify-content: center; */
+
+}
+
+input{
+    border: none;
+    margin:0 30px;
+    border-bottom: 1px solid rgb(107, 105, 105);
+    height: 90%;
+    /* width: 80%; */
+    /* background: #444; */
+    outline: none;
+
+
+
+}
+#submit{
+    background:  hsl(0, 100%, 74%);
+
+    width: 120px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin:10px 30px;
+
+    /* height: 80%; */
+    /* margin:50% 0; */
+    border: none;
+    transition: all 300ms ease-in-out;
+    
+}
+#submit:hover{
+    background:  hsla(0, 85%, 74%, 0.632);
+}
+input:placeholder{
+    color: black;
+}
+
+span{
+    font-weight: bold;
+}
+
+/* media query for desktop */
+@media screen and (min-width:700px )
+{
+    body{
+        background: black;
+    }
+    .page{
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        display: grid;
+        grid-template-columns: 60% 40%;
+        place-items: center;
+        gap: 20px;
+        
+
+    }
+
+    .intro{
+        /* border: 1px solid crimson; */
+        width: 70%;
+
+    }
+    .sign-in{
+        width: 80%;  
+    }
+
+}

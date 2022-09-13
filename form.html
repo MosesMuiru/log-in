@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <label for="awardwon">AwardWon</label>
+        <input type="text" id="awardwon" list="awards" name="awardwon">
+        <datalist id="awards">
+            <select name="" id="">
+                <option value="Best picture"></option>
+                <option value="Best Director"></option>
+                <option value="Best Adapted Screenplay"></option>
+                <option value="Best Original ScreenPlay"></option>
+            </select>
+
+        </datalist>
+        <label for="yearofcrime">year of crime</label>
+        <input type="number" id="yearofcrime" min="1929" max="2015" required>
+
+        <input type="range" min="1" max="10" value="5"/>
+        <span id="range">5</span>
+        <!-- <script>
+            let newValue = document.querySelector("value")
+            console.log(newValue)
+            function showValue(newValue){
+                document.getElementById("range").innerHTML = newValue;
+            }
+        </script> -->
+    </div>
+</body>
+</html>
